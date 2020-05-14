@@ -3,10 +3,10 @@ logging:
     org.springframework.security: DEBUG
 
 security:
- oauth2:
-   resource:
-     jwt:
-       keyUri: http://localhost:8080/auth/oauth/token_key
+  oauth2:
+    resource:
+      jwt:
+        keyUri: http://localhost:8080/auth/oauth/token_key
 
 server:
   port: 9090
