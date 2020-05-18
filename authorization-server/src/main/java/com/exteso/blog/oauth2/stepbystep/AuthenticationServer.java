@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableResourceServer
 public class AuthenticationServer {
 
-  private static final Log logger = LogFactory.getLog(AuthenticationServer.class);
+    private static final Log logger = LogFactory.getLog(AuthenticationServer.class);
 
-  public static void main(String[] args) {
-    SpringApplication.run(AuthenticationServer.class, args);
-  }
+    public static void main(String[] args) {
+        SpringApplication.run(AuthenticationServer.class, args);
+    }
 
-  @RequestMapping("/user")
-  public Principal user(Principal user) {
-    logger.info("AS /user has been called");
-    logger.debug("user info: " + user.toString());
-    return user;
-  }
+    @RequestMapping("/user")
+    public Principal user(Principal user) {
+        logger.info("AS /user has been called");
+        logger.debug("user info: " + user.toString());
+        return user;
+    }
 }

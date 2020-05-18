@@ -37,8 +37,8 @@
   <modelVersion>4.0.0</modelVersion>
   <name>authorization-server</name>
   <parent>
-    <artifactId>spring-boot-starter-parent</artifactId>
     <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
     <relativePath/>
     <version>1.4.1.RELEASE</version>
   </parent>
